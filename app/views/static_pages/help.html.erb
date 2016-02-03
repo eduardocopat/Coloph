@@ -1,0 +1,448 @@
+<style>
+        /* http://stackoverflow.com/questions/17309980/bootstrap-affix-changing-list-item-width */
+    .affix {
+        position: fixed;
+        top: 60px;
+        width: 260px;
+    }
+</style>
+<div class="container ">
+<div class="hero-unit">
+
+<div class="row-fluid">
+<div class="span4 bs-docs-sidebar">
+  <ul class="nav nav-tabs nav-stacked bs-docs-sidenav affix" data-spy="affix">
+    <li class="nav-header">Modelagem conceitual</li>
+    <li><a href="#">Descrição </a> </li> <!-- redirecting to top makes it nicer -->
+    <li><a href="#conceptual_entity">Entidades </a> </li>
+    <li><a href="#conceptual_attributes">Atributos</a></li>
+    <li><a href="#conceptual_relationships">Relacionamentos</a></li>
+    <li><a href="#conceptual_specializations">Especializações</a></li>
+
+    <li class="nav-header">Modelagem lógica</li>
+    <li><a href="#logical_modeling">Descrição</a></li>
+    <li><a href="#logical_table">Relações</a></li>
+    <li><a href="#logical_attributes">Atributos</a></li>
+    <li><a href="#logical_relationships">Relacionamentos</a></li>
+    <li><a href="#logical_specializations">Especializações</a></li>
+
+    <li class="nav-header">Modelagem física</li>
+    <li><a href="#physical_modeling">Descrição</a></li>
+    <li><a href="#physical_transformation">Transformação</a></li>
+
+    <li class="nav-header">Álgebra Relacional</li>
+    <li><a href="#relational_algebra">Descrição</a></li>
+
+    <li class="nav-header">SQL</li>
+    <li><a href="#sql">Descrição</a></li>
+  </ul>
+</div>
+<div class="span8">
+<h1>Ajuda</h1>
+Ajuda/Manual do usuário do Coloph. <p></p>
+Descrições retiradas da <a href="scholar/monografia.pdf">monografia</a>.
+Caso este manual não consiga auxiliá-lo, envie um e-mail para <a href="mailto:ecopat@gmail.com">ecopat@gmail.com</a>. Em
+caso de bug, clique em <%= link_to '<i class="fa fa-bug"></i> reportar um bug'.html_safe, bug_report_path %>.
+<p></p>
+<hr>
+<h2 id="conceptual_modeling"><p class="text-error">Modelagem conceitual</p></h2>
+Heuser (2001, p. 6) define um modelo conceitual como "um modelo de dados abstrato, que
+descreve a estrutura de um banco de dados de forma independente de um SGBD particular".
+Também cita que a abordagem mais popular é a entidade-relacionamento (ER), este tipo de
+modelagem, proposto por Chen (1976), será o modelo abordado neste estudo.
+<p></p>
+Conforme Silberschatz, Korth e Sudarshan (2006), o modelo ER baseia-se no entendimento
+de que o mundo real é formado por objetos chamados entidades, os quais possuem relacionamentos
+entre eles. Em seu clássico artigo, Chen (1976) propõe o modelo ER como um modelo
+que incorpora informações semanticamente importantes para o problema em questão.
+<hr>
+<h2 id="conceptual_entity" style="padding-top: 40px; margin-top: -40px;"><p class="text-info">Entidades</p></h2>
+Segundo Elmasri e Navathe (2010, p. 202), a entidade é o objeto básico do
+modelo ER, e pode ser definida como "uma coisa no mundo real de existência independente",
+podendo ser tanto algo físico ou abstrato.
+<h3>Criar <i class="fa fa-table"></i> entidade</h3>
+<ol>
+  <li>Clique em Entidade no menu superior</li>
+  <li>Preencha os campos necessários</li>
+  <li>Clique em Finalizar</li>
+  <li>Mova seu mouse para posicionar a entidade</li>
+  <li>Pressione o botão esquerdo do mouse para posicionar.</li>
+</ol>
+<h3>Editar entidade</h3>
+<ol>
+  <li>Clique com o botão direito do mouse na Entidade que deseja editar</li>
+  <li>Selecione editar</li>
+  <li>Edite os campos necessários</li>
+  <li>Clique em Finalizar</li>
+</ol>
+<h3>Mudar posição da entidade</h3>
+<ol>
+  <li>Clique com o botão esquerdo do mouse na Entidade e mantenha pressionado</li>
+  <li>Arraste para a posição desejada</li>
+  <li>Libere o botão</li>
+</ol>
+<h3>Remover entidade</h3>
+<ol>
+  <li>Clique com o botão direito do mouse na Entidade que deseja remover</li>
+  <li>Selecione remover</li>
+</ol>
+<h3>Entidade fraca/forte</h3>
+Entidades fracas/fortes são definidas a partir de <a href="#conceptual_relationships">relacionamentos</a>.
+<p></p>
+Silberschatz, Korth e Sudarshan (2006, p. 38) apontam que, em alguns casos, os atributos
+de uma entidade podem não ser suficientes para formar uma chave primária, isto é, possuir
+atributos identificadores, neste caso, diz-se que a entidade é fraca. Entidades que possuem um
+ou mais atributos identificadores próprios, isto é, que possuem chave primária, são denominadas
+entidades fortes.
+<p></p>
+Entidades fracas apenas têm um significado quando fazem parte de um relacionamento, isto
+é, ocorrências de uma entidade fraca dependem de uma entidade forte para existir, define-se,
+então, que este é um relacionamento identificador. (HEUSER, 2001, p. 25).
+
+<hr>
+<h2 id="conceptual_attributes" style="padding-top: 40px; margin-top: -40px;"><p class="text-info">Atributos</p></h2>
+Silberschatz, Korth e Sudarshan (2006, p. 22) definem que "uma entidade é representada
+por um conjunto de atributos. Atributos são propriedades descritivas de cada membro de um
+conjunto de entidades". Os tipos de atributos estão listados na
+<a href="scholar/monografia.pdf">seção 2.2.3.1 da monografia</a>
+
+<p></p>
+
+<h3>Adicionar atributo</h3>
+<ol>
+  <li>Na criação/edição de uma entidade</li>
+  <li>Clique no botão <i class="fa fa-plus-circle"></i> para adicionar um atributo</li>
+</ol>
+
+<h3>Remover atributos</h3>
+<ol>
+  <li>Na criação/edição de uma entidade</li>
+  <li>Clique no botão <i class="fa fa-minus-circle"></i> para remover um atributo</li>
+</ol>
+
+<h3>Mudar posição do atributo</h3>
+<ol>
+  <li>Clique com o botão esquerdo do mouse no atributo e mantenha pressionado</li>
+  <li>Arraste para a posição desejada</li>
+  <li>Libere o botão</li>
+</ol>
+
+<hr>
+<h2 id="conceptual_relationships" style="padding-top: 40px; margin-top: -40px;">
+<p class="text-info">Relacionamentos</p></h2>
+Silberschatz, Korth e Sudarshan (2006, p. 25) definem que "um relacionamento é uma associação
+entre uma ou várias entidades". Heuser (2001, p. 13) exemplifica: um relacionamento
+pode ocorrer quando se deseja saber quais pessoas estão associadas a um determinado departamento
+em uma organização.
+<p></p>
+Relacionamentos são representados por um losango em um DER, e similarmente às entidades,
+também podem possuir atributos. (RAMAKRISHNAN; GEHRKE, 2003, p. 31).
+<h3>Criar relacionamento <i class="fa fa-link"></i> identificador ou <i class="fa fa-unlink"></i> não-identificador
+</h3>
+<ol>
+  <li>Clique no relacionamento desejado (Seção 2.2.5 da <a href="scholar/monografia.pdf">monografia</a>) no menu
+    superior
+  </li>
+  <li>Clique na Entidade pai do relacionamento</li>
+  <li>Clique na Entidade filha do relacionamento</li>
+  <li>Edite as informações necessárias, tais como nome, atributos e cardinalidade(Seção 2.2.4.3 da
+    <a href="scholar/monografia.pdf">monografia</a>).
+  </li>
+  <li>Clique em Finalizar</li>
+</ol>
+<h3> Criar <i class="fa fa-dot-circle-o"></i> auto-relacionamento </h3>
+<ol>
+  <li>Clique em auto-relacionamento (Seção 2.2.4.1 da <a href="scholar/monografia.pdf">monografia</a>) no menu
+    superior
+  </li>
+  <li>Clique na Entidade desejada</li>
+  <li>Edite as informações necessárias, tais como nome, atributos e cardinalidade(Seção 2.2.4.3 da
+    <a href="scholar/monografia.pdf">monografia</a>).
+  </li>
+  <li>Clique em Finalizar</li>
+</ol>
+<h3> Criar <i class="fa fa-code-fork"></i> relacionamento ternário </h3>
+<ol>
+  <li>Clique em relacionamento ternário (Seção 2.2.4.2 da <a href="scholar/monografia.pdf">monografia</a>) no menu
+    superior
+  </li>
+  <li>Clique na Entidade desejada ou relacionamento desejado que deseja tornar ternário</li>
+  <li>Clique na outra Entidade desejada ou relacionamento desejado que deseja tornar ternário</li>
+  <li>Edite as informações necessárias, tais como nome, atributos e cardinalidade(Seção 2.2.4.3 da
+    <a href="scholar/monografia.pdf">monografia</a>).
+  </li>
+  <li>Clique em Finalizar</li>
+</ol>
+<h3>Editar relacionamento</h3>
+<ol>
+  <li>Clique com o botão direito do mouse na Relacionamento que deseja editar</li>
+  <li>Selecione editar</li>
+  <li>Edite os campos necessários</li>
+  <li>Clique em Finalizar</li>
+</ol>
+<h3>Mudar posição da relacionamento</h3>
+<ol>
+  <li>Clique com o botão esquerdo do mouse na Relacionamento e mantenha pressionado</li>
+  <li>Arraste para a posição desejada</li>
+  <li>Libere o botão</li>
+</ol>
+<h3>Remover relacionamento</h3>
+<ol>
+  <li>Clique com o botão direito do mouse na Relacionamento que deseja remover</li>
+  <li>Selecione remover</li>
+  <li>Caso o relacionamento for identificador, chaves primárias que foram transferidas, serão removidas</li>
+</ol>
+<hr>
+<h2 id="conceptual_specializations" style="padding-top: 40px; margin-top: -40px;">
+<p class="text-info">Especializações</p></h2>
+Conforme Heuser (2001, p. 28), é possível que uma entidade genérica possua um subconjunto
+de entidades com propriedades particulares, chamadas de entidades especializadas. A
+ideia do uso de generalização e especialização vem em conjunto com a herança de propriedades,
+onde uma entidade especializada possui, além de seus atributos, os atributos de sua entidade
+genérica.
+<h3>Criar uma Generalização/Especialização</h3>
+<ol>
+  <li>Clique em <i class="fa fa-sitemap"></i> Generalização/Especialização (Seção 2.2.6 da
+    <a href="scholar/monografia.pdf">monografia</a>) no menu superior
+  </li>
+  <li>Clique na Entidade Pai</li>
+  <li>Clique que receberá a herança</li>
+</ol>
+
+<h3>Generalizar/Especializar outra subclasse</h3>
+<ol>
+  <li>Clique com o botão direito no símbolo da Generalização/Especialização</li>
+  <li>Selecione Especializar/Generalizar outra entidade</li>
+  <li>Clique na outra entidade</li>
+</ol>
+
+<h3>Remover Generalização/Especialização</h3>
+<ol>
+  <li>Clique com o botão direito no símbolo da Generalização/Especialização</li>
+  <li>Selecione remover Especializar/Generalizar</li>
+</ol>
+
+<hr id="logical_modeling">
+</br>
+<h2 ><p class="text-error">Modelagem lógica</p></h2>
+O modelo lógico é o modelo de dados que representa a estrutura de dados de um SGBD
+comercial. Neste estudo será enfatizado o modelo relacional, que é a abordagem mais popular
+de projeto e implementação de SGBDs. (ELMASRI; NAVATHE, 2010, p. 9).
+<p></p>
+Silberschatz, Korth e Sudarshan (2006, p. 61) definem que "um banco de dados relacional é
+como uma coleção de Relaçãos, cada uma das quais com um nome único".
+<p> Neste protótipo, utilizou-se a <strong>Notação Information Engineering (IE) </strong>, mais informações na
+  seção 2.3.5 da <a href="scholar/monografia.pdf">monografia</a>.
+<hr>
+<h2 id="logical_table" style="padding-top: 40px; margin-top: -40px;"><p class="text-info">Relações</p></h2>
+Uma Relação é formada
+por linhas e colunas. As linhas de uma Relação contém um conjunto de dados relacionados,
+e representam um fato que relata a uma entidade ou relacionamento. As colunas e o nome
+da Relação são utilizados para a interpretação dos dados armazenados nas linhas. (ELMASRI;
+NAVATHE, 2010, p. 60).
+<p>
+  Na definição formal da terminologia do modelo, uma linha é chamada de tupla, uma coluna é
+  chamada de atributo, e uma Relação é chamada de relação. O tipo de dado que descreve os valores
+  em cada coluna é representado por um domínio. (SILBERSCHATZ; KORTH; SUDARSHAN,
+  2006, p. 62). Este estudo utilizará a definição formal, isto é: tuplas, domínios, atributos e
+  relações.
+
+<h3>Criar <i class="fa fa-table"></i> Relação</h3>
+<ol>
+  <li>Clique em Relação no menu superior</li>
+  <li>Preencha os campos necessários</li>
+  <li>Clique em Finalizar</li>
+  <li>Mova seu mouse para posicionar a Relação</li>
+  <li>Pressione o botão esquerdo do mouse para posicionar.</li>
+</ol>
+<h3>Editar Relação</h3>
+<ol>
+  <li>Clique com o botão direito do mouse na Relação que deseja editar</li>
+  <li>Selecione editar</li>
+  <li>Edite os campos necessários</li>
+  <li>Clique em Finalizar</li>
+</ol>
+<h3>Mudar posição da Relação</h3>
+<ol>
+  <li>Clique com o botão esquerdo do mouse na Relação e mantenha pressionado</li>
+  <li>Arraste para a posição desejada</li>
+  <li>Libere o botão</li>
+</ol>
+<h3>Remover Relação</h3>
+<ol>
+  <li>Clique com o botão direito do mouse na Relação que deseja remover</li>
+  <li>Selecione remover</li>
+</ol>
+<hr>
+<h2 id="logical_attributes" style="padding-top: 40px; margin-top: -40px;"><p class="text-info">Atributos</p></h2>
+  <p></p>
+
+  <h3>Adicionar atributo</h3>
+  <ol>
+    <li>Na criação/edição de uma entidade</li>
+    <li>Clique no botão <i class="fa fa-plus-circle"></i> para adicionar um atributo</li>
+  </ol>
+
+  <h3>Remover atributos</h3>
+  <ol>
+    <li>Na criação/edição de uma entidade</li>
+    <li>Clique no botão <i class="fa fa-minus-circle"></i> para remover um atributo</li>
+  </ol>
+
+  <h3>Mudar posição do atributo</h3>
+  <ol>
+    <li>Clique na linha do atributo que deseja mover na tabela de atributos da relação</li>
+    <li>Arraste para a posição desejada</li>
+    <li>Libere o botão</li>
+  </ol>
+<hr>
+<h2 id="logical_relationships" style="padding-top: 40px; margin-top: -40px;">
+  <p class="text-info">Relacionamentos</p></h2>
+  Similar ao <a href="#conceptual_relationships">relacionamento da modelagem conceitual</a>, porém, introduzindo o
+  conceito de chaves, detalhado na seção 2.3.2 da <a href="scholar/monografia.pdf">monografia</a>.
+  <p></p>
+  Conforme Heuser (2001, p. 74), a chave estrangeira é um atributo ou um conjunto de atributos
+  cujos valores necessariamente pertencem a chave primária de outra tabela. A chave estrangeira
+  é responsável por permitir o uso de relacionamentos em um banco de dados relacional.
+  <h3>Criar relacionamento <i class="fa fa-link"></i> identificador, <i class="fa fa-unlink"></i> não-identificador
+    ou <i class="fa fa-arrows-h"></i> muitos para muitos</h3>
+  <ol>
+    <li>Clique no relacionamento desejado (Seção 2.2.5 da <a href="scholar/monografia.pdf">monografia</a>) no menu
+      superior
+    </li>
+    <li>Clique na Entidade pai do relacionamento</li>
+    <li>Clique na Entidade filha do relacionamento</li>
+    <li>Edite as informações necessárias, tais como nome, e cardinalidade(Seção 2.2.4.3 e 2.4.4.4 da
+      <a href="scholar/monografia.pdf">monografia</a>).
+    </li>
+    <li>Clique em Finalizar</li>
+  </ol>
+  <h3> Criar <i class="fa fa-dot-circle-o"></i> auto-relacionamento </h3>
+  <ol>
+    <li>Clique em auto-relacionamento (Seção 2.2.4.1 da <a href="scholar/monografia.pdf">monografia</a>) no menu
+      superior
+    </li>
+    <li>Clique na Entidade desejada</li>
+    <li>Edite as informações necessárias, tais como nome, atributos e cardinalidade(Seção 2.2.4.3 da
+      <a href="scholar/monografia.pdf">monografia</a>).
+    </li>
+    <li>Clique em Finalizar</li>
+  </ol>
+  <h3>Editar relacionamento</h3>
+  <ol>
+    <li>Clique com o botão direito do mouse na Relacionamento que deseja editar</li>
+    <li>Selecione editar</li>
+    <li>Edite os campos necessários</li>
+    <li>Clique em Finalizar</li>
+  </ol>
+  <h3>Remover relacionamento</h3>
+  <ol>
+    <li>Clique com o botão direito do mouse na Relacionamento que deseja remover</li>
+    <li>Selecione remover</li>
+    <li>Caso o relacionamento for identificador, chaves primárias que foram transferidas, serão removidas</li>
+  </ol>
+  <hr>
+  <h2 id="logical_specializations" style="padding-top: 40px; margin-top: -40px;">
+    <p class="text-info">Especializações</p></h2>
+    Similar ao <a href="#conceptual_specializations">relacionamento da modelagem conceitual</a>, contudo, existem
+    diversas formas de representar a herança ou subtipagem utilizando a notação IE,
+    tendo em vista que não há definição formal a ser utilizada
+    <h3>Criar uma Generalização/Especialização</h3>
+    <ol>
+      <li>Clique em <i class="fa fa-sitemap"></i> Generalização/Especialização (Seção 2.2.6 da
+        <a href="scholar/monografia.pdf">monografia</a>) no menu superior
+      </li>
+      <li>Clique na Entidade Pai</li>
+      <li>Clique que receberá a herança</li>
+    </ol>
+
+    <h3>Generalizar/Especializar outra subclasse</h3>
+    <ol>
+      <li>Clique com o botão direito no símbolo da Generalização/Especialização</li>
+      <li>Selecione Especializar/Generalizar outra entidade</li>
+      <li>Clique na outra entidade</li>
+    </ol>
+
+    <h3>Remover Generalização/Especialização</h3>
+    <ol>
+      <li>Clique com o botão direito no símbolo da Generalização/Especialização</li>
+      <li>Selecione remover Especializar/Generalizar</li>
+    </ol>
+
+    <hr  id="physical_modeling">
+    </br>
+    <h2 style="padding-top: 40px; margin-top: -40px;">
+      <p class="text-info">Modelo físico</P></h2>
+    O modelo físico visa definir especificações para o armazenamento e acesso ao banco de dados,
+    utilizando estratégias como índices, clusters e domínio específico do atributo. (HALPIN;
+    MORGAN, 2008, p. 32). Neste passo, o modelo lógico é transcrito para a SQL, a qual é detalhada
+    na seção 2.7. Com isso, é necessária a definição do domínio de uma coluna, independente
+    para cada SGBD. A definição de domínio é descrita na seção 2.3.1. (TEOREY et al., 2010,
+    p. 6).
+    <p></p>
+    Segundo Teorey et al. (2010, p. 190), a modelagem conceitual mapeia as regras de negócio
+    e os requisitos funcionais do banco de dados; o modelo lógico define as entidades e relacionamentos,
+    aplicando normalização; e o modelo físico transforma o modelo lógico em objetos do
+    banco de dados, isto é, tabelas, índices e restrições de integridade.
+    <hr id="physical_transformation">
+    </br>
+    <h3 >Transformar do modelo lógico para o modelo físico e vice-versa</h3>
+    Ao transformar um modelo lógico para um modelo físico, é possível definir o tipo de dado para cada atributo de uma
+    relação.
+    <ol>
+      <li>Clique no botão de <i class="fa fa-refresh"></i> Converter para físico/lógico</li>
+    </ol>
+    <hr  id="relational_algebra">
+    </br>
+    <h2 id="relational_algebra" style="padding-top: 40px; margin-top: -40px;">
+      <p class="text-info">Álgebra relacional</P></h2>
+    Um modelo de dados, além de conter as definições da estrutura e restrições dos dados,
+    também deve incluir um conjunto de operações para manipular o banco de dados. No modelo
+    relacional, esse conjunto de operações é expresso a partir da álgebra relacional.
+    <p></p>
+    A partir de expressões escritas em álgebra relacional, é possível descrever as operações
+    com o intuito de realizar consultas no banco de dados. O resultado das consultas é uma nova
+    relação, a qual pode ser manipulada utilizando novamente operações em álgebra relacional.
+    Uma sequência de operações forma uma expressão em álgebra relacional.
+    <p></p>
+    A álgebra relacional fornece uma fundamentação formal para as operações do modelo relacional,
+    assim como seus conceitos são utilizados como base para o SQL, no que se deve
+    a sua implementação e otimização no processo de consulta ao banco de dados. (ELMASRI;
+    NAVATHE, 2010, p. 145)
+    <p></p>
+
+    Existe uma boa descrição de cada operação, com exemplos visuais, na seção 2.6 da
+    <a href="scholar/monografia.pdf">monografia</a>)
+    <hr>
+    <h3>Utilizando o módulo de álgebra relacional</h3>
+    <ul>
+      <li>Para criar sua consulta, é possível visualizar o diagrama criado pelo professor</li>
+      <li>Para inserir as operações de álgebra relacional, basta clicar no botão que representa a opearção</li>
+      <li>Não esqueça de clicar no botão de atualizar!</li>
+    </ul>
+
+    <hr id="sql">
+    </br>
+    <h2  style="padding-top: 40px; margin-top: -40px;"><p class="text-info">SQL</P></h2>
+    A álgebra relacional, que proporciona uma notação concisa para
+    operações em banco de dados; porém, os usuários de um banco de dados necessitam de uma
+    linguagem mais simples. Neste sentido, surgiu a linguagem comercial mais utilizada no mercado,
+    a Structure Query Language (SQL). A SQL permite realizar consultas ao banco de dados,
+    definir estruturas de dados, modificar dados no banco de dados e definir especificações de segurança.
+    (SILBERSCHATZ; KORTH; SUDARSHAN, 2006, p. 109).
+
+    A seção 2.7 da
+    <a href="scholar/monografia.pdf">monografia</a>) apresenta informações sobre SQL.
+    <hr>
+    <h3>Utilizando o módulo de SQL</h3>
+    <ul>
+      <li>Para criar sua consulta, é possível visualizar o diagrama criado pelo professor</li>
+      <li>Não esqueça de clicar no botão de atualizar!</li>
+    </ul>
+
+</div>
+</div>
+
+
+</div>
+</div>

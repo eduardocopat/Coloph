@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="hero-unit">
+<h2>Login</h2>
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+  <div class="input-prepend">
+    <span class="add-on"><i class="fa fa-envelope-o"></i> email &nbsp;</span>
+    <%= f.email_field :email, :autofocus => true %>
+  </div>
+    <div class="input-prepend">
+      <span class="add-on"><i class="fa fa-key"></i> senha</span>
+      <%= f.password_field :password %>
+    </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div><%= f.check_box :remember_me %> <%= f.label :remember_me, :class => "checkbox inline" %></div>
+  <% end -%>
+
+  <div><%= f.submit "Login", :class => "btn btn-primary" %></div>
+<% end %>
+  </div>
+</div>

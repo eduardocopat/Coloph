@@ -1,0 +1,15 @@
+<%= simple_form_for(@diagram) do |f| %>
+    <%= f.error_notification %>
+
+    <%= f.input :name,:input_html => { :class => "input-xxlarge" }%>
+    <%= f.enum_select :diagram_type, :input_html => { :class => "span12" } %>
+    <br/>
+    <%= f.button :submit, :class => "btn btn-primary" %>
+<% end %>
+
+
+<script>
+    $(document).ready(function() {
+        $("#diagram_diagram_type").addClass('input-xxlarge')
+    });
+</script>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Coloph/lib/src/HTTPRequest/BaseCanvasModelHTTPRequests/Table/validateTableRequest.dart&apos; to &apos;ValidateTableRequest.dart&apos;" description="Rename resource &apos;validateTableRequest.dart&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="lib/src/HTTPRequest/BaseCanvasModelHTTPRequests/Table/validateTableRequest.dart" name="ValidateTableRequest.dart" stamp="1390246247571" updateReferences="true"/>
+</session>

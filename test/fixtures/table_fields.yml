@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  type: 
+  primary_key: false
+  foreign_key: false
+
+two:
+  name: MyString
+  type: 
+  primary_key: false
+  foreign_key: false

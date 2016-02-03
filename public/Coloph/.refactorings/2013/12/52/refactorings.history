@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;coloph.dart.js&apos; to &apos;testjs&apos;" description="Move &apos;coloph.dart.js&apos; to &apos;testjs&apos;" destination="web/testjs" element1="web/coloph.dart.js" element2="web/coloph.dart.js.deps" element3="web/coloph.dart.js.map" element4="web/coloph.dart.precompiled.js" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="4" stamp="1387844149847" updateReferences="true"/>
+</session>

@@ -1,0 +1,25 @@
+<h2>Diagramas</h2>
+<% if @diagrams.any? %>
+    <table class="table table-striped table-bordered ">
+      <tr>
+        <th>Nome</th>
+        <th>Tipo</th>
+        <th></th>
+        <th></th>
+      </tr>
+
+      <% @diagrams.each do |diagram| %>
+          <tr>
+            <td><%= diagram.name %></td>
+            <td><%= diagram.diagram_type %></td>
+            <td class="span1"><%= link_to 'Visualizar/Editar', diagram, :class => "btn btn-primary" %></td>
+            <td class="span1"><%= link_to 'Remover', diagram, method: :delete, data: { confirm: 'Deseja realmente remover?' }, :class => "btn btn-danger" %></td>
+          </tr>
+      <% end %>
+    </table>
+
+<% end %>
+
+<br />
+
+<%= link_to 'Criar diagrama', new_diagram_path, :class => "btn btn-primary" %>

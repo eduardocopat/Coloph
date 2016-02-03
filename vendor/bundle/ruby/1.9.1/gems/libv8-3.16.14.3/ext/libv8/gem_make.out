@@ -1,0 +1,11 @@
+C:/RailsInstaller/Ruby1.9.3/bin/ruby.exe extconf.rb 
+creating Makefile
+O sistema n∆o pode encontrar o caminho especificado.
+O sistema n∆o pode encontrar o caminho especificado.
+O sistema n∆o pode encontrar o caminho especificado.
+C:/Users/AVELL/Dropbox/Coloph/vendor/bundle/ruby/1.9.1/gems/libv8-3.16.14.3/ext/libv8/builder.rb:58:in `setup_python!': libv8 requires python 2 to be installed in order to build, but it is currently not available (RuntimeError)
+	from C:/Users/AVELL/Dropbox/Coloph/vendor/bundle/ruby/1.9.1/gems/libv8-3.16.14.3/ext/libv8/builder.rb:42:in `block in build_libv8!'
+	from C:/Users/AVELL/Dropbox/Coloph/vendor/bundle/ruby/1.9.1/gems/libv8-3.16.14.3/ext/libv8/builder.rb:40:in `chdir'
+	from C:/Users/AVELL/Dropbox/Coloph/vendor/bundle/ruby/1.9.1/gems/libv8-3.16.14.3/ext/libv8/builder.rb:40:in `build_libv8!'
+	from C:/Users/AVELL/Dropbox/Coloph/vendor/bundle/ruby/1.9.1/gems/libv8-3.16.14.3/ext/libv8/location.rb:24:in `install!'
+	from extconf.rb:7:in `<main>'

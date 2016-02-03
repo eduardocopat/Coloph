@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="hero-unit">
+
+    <ul class="breadcrumb">
+      <li><a href="#"><i class="fa fa-home"></i><%= link_to "Início", root_url %></a> <span class="divider">/</span></li>
+      <li><a href="#"><i class="fa fa-sitemap fa-flip-vertical"></i><%= link_to ('Meus '+ t('activerecord.models.diagram.other').downcase).html_safe, diagrams_path %></a> <span class="divider">/</span></li>
+      <li class="active">Novo diagrama</li>
+    <%= bootstrap_flash %>
+
+    <h1>Novo Diagrama</h1>
+
+    <%= render 'form' %>
+  </div>
+</div>

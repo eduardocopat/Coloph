@@ -1,0 +1,10 @@
+<ul class="breadcrumb">
+  <li><a href="#"><i class="fa fa-home"></i> Início</a></li>
+</ul>
+
+<%= bootstrap_flash %>
+
+<h2>Olá <%= current_user.name %></h2>
+
+<% @diagrams = Diagram.where(:user_id => current_user.id) %>
+<%= render :partial => 'diagrams/diagram_index', :locals => {:diagrams => @diagrams} %>

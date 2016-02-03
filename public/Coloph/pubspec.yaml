@@ -1,0 +1,6 @@
+name: Coloph
+author: Eduardo Copat
+description: Coloph
+dependencies:
+  browser: any
+  js: any

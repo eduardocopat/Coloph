@@ -1,0 +1,15 @@
+.DS_Store
+**/*.log
+spec/**/*.log
+*.gem
+pkg
+rdoc
+coverage
+doc
+log
+nbproject
+tmp
+vendor
+lib/tasks/*
+TODO.rdoc
+webrat-*.html

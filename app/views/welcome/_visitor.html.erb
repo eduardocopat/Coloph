@@ -1,0 +1,28 @@
+
+<h1 style=text-align:center;font-size:400%><i class="fa fa-database"></i> Coloph</h1>
+<P></P>
+<div class="well">
+  <h3>Uma ferramenta CASE para o ensino de banco de dados relacional</h3>
+  <P></P>
+
+  <ul>
+    <li>Modelagem entidade-relacionamento (modelo conceitual)</li>
+    <li>Modelagem entidade-relacionamento (modelo lógico)</li>
+
+  </ul>
+  <%= link_to "Leia mais".html_safe, features_path,  :class => "btn btn-success" %>
+</div>
+
+<!-- Example row of columns -->
+<div class="row">
+  <div class="span5 ">
+    <h2>Professor</h2>
+    <p>Como professor, é possível criar exercícios e administrar as turmas e os grupos de estudantes, assim como acompanhar o desenvolvimento das atividades.</p>
+    <p><%= link_to "Criar uma conta professor", new_user_registration_path(:role => :professor), :class => "btn btn-primary"%></p>
+  </div>
+  <div class="span5">
+    <h2>Estudante</h2>
+    <p>Como estudante, é possível resolver os exercícios elaborados pelo professor, sendo eles diagramas de modelagem entidade-relacionamento ou de consulta.</p>
+    <p><%= link_to "Criar uma conta estudante", new_user_registration_path(:role => :student), :class => "btn btn-primary"%></p>
+  </div>
+</div>

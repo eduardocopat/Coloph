@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 1 resources to &apos;Strategies&apos;" description="Move 1 resources to &apos;Strategies&apos;" destination="web/Canvas/Strategies" element1="web/Canvas/Strategies/packages/TableCreationStrategy.dart" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1367887708560" updateReferences="true"/>
+</session>

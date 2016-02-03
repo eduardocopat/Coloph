@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Coloph/assets/js/jquery.js&apos; to &apos;jquery-1.71.js&apos;" description="Rename resource &apos;jquery.js&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="assets/js/jquery.js" name="jquery-1.71.js" stamp="1383608904324" updateReferences="true"/>
+</session>

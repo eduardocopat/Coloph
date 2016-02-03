@@ -1,0 +1,1243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4351cf89-f6c8-444a-98b2-befe371fea9b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/diagrams/_diagram_index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont.svg" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\assets\javascripts\exercise_solutions.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\assets\javascripts\exercises.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\assets\javascripts\groups.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\assets\javascripts\klasses.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\assets\javascripts\query_exercise_answers.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\assets\stylesheets\exercise_solutions.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\assets\stylesheets\exercises.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\assets\stylesheets\groups.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\assets\stylesheets\klasses.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\assets\stylesheets\query_exercise_answers.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\controllers\exercise_solutions_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\controllers\exercises_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\controllers\groups_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\controllers\klasses_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\controllers\query_exercise_answers_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\helpers\exercise_solutions_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\helpers\exercises_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\helpers\groups_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\helpers\klasses_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\helpers\query_exercise_answers_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\models\assignment.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\models\exercise.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\models\exercise_solution.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\models\group.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\models\klass.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\models\membership.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\models\query_exercise_answer.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\exercises\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\exercises\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\exercises\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\exercises\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\exercises\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\groups\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\groups\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\groups\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\groups\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\groups\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\klasses\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\klasses\_groups.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\klasses\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\klasses\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\klasses\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\klasses\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\query_exercise_answers\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\query_exercise_answers\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\query_exercise_answers\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\query_exercise_answers\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\query_exercise_answers\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\welcome\_student.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\db\migrate\20131226132955_create_klasses.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\db\migrate\20131226165539_create_groups.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\db\migrate\20131230170713_create_exercises.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\db\migrate\20140101123351_create_exercise_solutions.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\db\migrate\20140211233409_create_query_exercise_answers.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\log\.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\fixtures\exercise_solutions.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\fixtures\exercises.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\fixtures\groups.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\fixtures\klasses.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\fixtures\query_exercise_answers.yml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\functional\exercise_solutions_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\functional\exercises_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\functional\groups_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\functional\klasses_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\functional\query_exercise_answers_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\unit\exercise_solution_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\unit\exercise_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\unit\group_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\unit\helpers\exercise_solutions_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\unit\helpers\exercises_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\unit\helpers\groups_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\unit\helpers\klasses_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\unit\helpers\query_exercise_answers_helper_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\unit\klass_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\AVELL\Dropbox\Coloph\test\unit\query_exercise_answer_test.rb" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\AVELL\Dropbox\Coloph\app\views\welcome\_professor.html.erb" afterPath="$PROJECT_DIR$/app/views/welcome/_user.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/FontAwesome.otf" afterPath="$PROJECT_DIR$/public/assets/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/public/assets/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/_visitor.html.erb" afterPath="$PROJECT_DIR$/app/views/welcome/_visitor.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ability.rb" afterPath="$PROJECT_DIR$/app/models/ability.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/diagram.rb" afterPath="$PROJECT_DIR$/app/models/diagram.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/diagrams_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/diagrams_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/features.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/features.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/diagrams/index.html.erb" afterPath="$PROJECT_DIR$/app/views/diagrams/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/diagrams/show.html.erb" afterPath="$PROJECT_DIR$/app/views/diagrams/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
+    </list>
+    <ignored path="Coloph.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1415927492130" ignored="false" />
+    <file path="/application.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389562428748" ignored="false" />
+    <file path="/Ruby Console" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1404862029962" ignored="false" />
+    <file path="/production.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389824829908" ignored="false" />
+    <file path="/Gemfile" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389564440631" ignored="false" />
+    <file path="/application.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1396984286977" ignored="false" />
+    <file path="/_professor.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1394471738730" ignored="false" />
+    <file path="/index.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1404864329367" ignored="false" />
+    <file path="$PROJECT_DIR$/app/views/exercises/_home_exercises_breadcumb.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389567841783" ignored="false" />
+    <file path="/new.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1394218171186" ignored="false" />
+    <file path="/pt.yml" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1394220436813" ignored="false" />
+    <file path="/show.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1406679057732" ignored="false" />
+    <file path="/_form.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1394220388812" ignored="false" />
+    <file path="/simple_form.pt.yml" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389569398750" ignored="false" />
+    <file path="/exercises_controller.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389569627097" ignored="false" />
+    <file path="/a.dummy" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1404864873181" ignored="false" />
+    <file path="/edit.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392162938877" ignored="false" />
+    <file path="/_groups.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389570866631" ignored="false" />
+    <file path="/klasses_controller.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1395601145838" ignored="false" />
+    <file path="/fragment.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1394740167644" ignored="false" />
+    <file path="/groups_controller.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392162334506" ignored="false" />
+    <file path="/tables_controller.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389738914375" ignored="false" />
+    <file path="/routes.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1394633010516" ignored="false" />
+    <file path="/20131113013712_change_foreign_key_in_table_field.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389739803978" ignored="false" />
+    <file path="/20140114225510_change_foreignkey_type.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389740123557" ignored="false" />
+    <file path="/relationships_controller.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392682798321" ignored="false" />
+    <file path="/relationship.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389744094709" ignored="false" />
+    <file path="/20140114234507_add_x_and_y.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389743446746" ignored="false" />
+    <file path="/20140114235115_add_width_and_height_to_relationships.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389743484816" ignored="false" />
+    <file path="/20140115002535_change_identifying_to_boolean.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389745545686" ignored="false" />
+    <file path="/application_controller.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1389826225863" ignored="false" />
+    <file path="/table.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1391642932590" ignored="false" />
+    <file path="/20140211215406_add_user_id_to_diagram.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392155811599" ignored="false" />
+    <file path="/diagrams_controller.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1396400983129" ignored="false" />
+    <file path="/_visitor.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1404865080503" ignored="false" />
+    <file path="/diagram.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392159187172" ignored="false" />
+    <file path="/20140211222930_add_name_to_diagram.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392157780166" ignored="false" />
+    <file path="/exercise.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1393593117752" ignored="false" />
+    <file path="/20140211224915_add_diagram_id_to_exercise.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392159035224" ignored="false" />
+    <file path="/exercise_solution.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392161800978" ignored="false" />
+    <file path="/20140211231446_add_answer_to_exercise_solution.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392160553034" ignored="false" />
+    <file path="/20140211233719_change_exercise_solution_add_query_exercise_answer.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392162007864" ignored="false" />
+    <file path="/query_exercise_answer.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392163479691" ignored="false" />
+    <file path="/groups_helper.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392678825723" ignored="false" />
+    <file path="/_student.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1394715756969" ignored="false" />
+    <file path="/ability.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1404862705548" ignored="false" />
+    <file path="/specializations_controller.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392682788320" ignored="false" />
+    <file path="/query_exercise_answers_controller.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392686839632" ignored="false" />
+    <file path="/20140218224015_add_data_type_to_table_field.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1392763347840" ignored="false" />
+    <file path="/20140225011118_add_data_type_to_sub_table_field.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1393290699416" ignored="false" />
+    <file path="/static_pages_controller.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1394632996273" ignored="false" />
+    <file path="/user.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1404862665083" ignored="false" />
+    <file path="/about.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1394456785460" ignored="false" />
+    <file path="/temp.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1394457722098" ignored="false" />
+    <file path="/features.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1397063989482" ignored="false" />
+    <file path="/bug_report.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1394473822616" ignored="false" />
+    <file path="/help.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1394741669058" ignored="false" />
+    <file path="/DiagramController.dart" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1395102927143" ignored="false" />
+    <file path="/20140317234135_add_primary_key_to_relationship_field.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1395099728571" ignored="false" />
+    <file path="/relationship_field.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1395100242790" ignored="false" />
+    <file path="/20140317235538_add_primary_key_to_relationship_field.rb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1395100547724" ignored="false" />
+    <file path="/bootstrap.css" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1396529796257" ignored="false" />
+    <file path="/_user.html.erb" changelist="4351cf89-f6c8-444a-98b2-befe371fea9b" time="1404864172082" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Coloph@routes.coverage" NAME="routes Coverage Results" MODIFIED="1389041162203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Coloph@routes__Coloph.coverage" NAME="routes: Coloph Coverage Results" MODIFIED="1389210677543" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Coloph@Development__Coloph.coverage" NAME="Development: Coloph Coverage Results" MODIFIED="1389208830022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Coloph@Production__Coloph.coverage" NAME="Production: Coloph Coverage Results" MODIFIED="1389100657237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Coloph@db_migrate__Coloph.coverage" NAME="db:migrate: Coloph Coverage Results" MODIFIED="1389033363881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Coloph" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/diagrams/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_visitor.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/welcome/_visitor.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="16" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="diagrams_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/diagrams_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="14" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ability.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="4" selection-start="139" selection-end="139" vertical-scroll-proportion="0.15212528">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/diagrams/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="457" column="0" selection-start="17122" selection-end="17122" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="GeneratorOptions">
+    <option name="ENVIRONMENT" value="development" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app/controllers/klasses_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/diagram.rb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/_professor.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/diagrams_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/_user.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/diagrams/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/diagrams/_diagram_index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/welcome/_visitor.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/diagrams/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/ability.rb" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Coloph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="RailsProjectView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="Errors" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/script/rails" />
+    <property name="FullScreen" value="false" />
+    <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
+    <property name="RailsGeneratorsPopup.hiddenIncluded" value="true" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\i837187\Dropbox\Coloph\public\academic" />
+      <recent name="C:\Users\i837187\Dropbox\Coloph\public\help" />
+      <recent name="C:\Users\i837187\Dropbox\Coloph\app\views\static_pages" />
+      <recent name="C:\Users\AVELL\Dropbox\Coloph\public\Coloph\packages\browser" />
+      <recent name="C:\Users\AVELL\Dropbox\Coloph\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AVELL\Dropbox\Coloph\public\assets" />
+      <recent name="C:\Users\AVELL\Dropbox\Coloph\public\assets\assets" />
+      <recent name="C:\Users\i837187\Dropbox\Coloph\app\views" />
+      <recent name="C:\Users\i837187\Dropbox\Coloph\public" />
+      <recent name="C:\Users\AVELL\Dropbox\Coloph\app\assets\javascripts" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Rails.Development: Coloph">
+    <configuration default="false" name="routes" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="Coloph" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="routes" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:reset" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="Coloph" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:reset" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="Coloph" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="assets:precompile" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="Coloph" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="assets:precompile" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Rails console: Coloph" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
+      <module name="Coloph" />
+      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/script/rails" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="console" />
+      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="true" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="RailsRunConfigurationType" factoryName="Rails">
+      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
+      <module name="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="127.0.0.1" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="IrbRunConfigurationType" factoryName="IRB console">
+      <module name="" />
+      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
+      <option name="VM_PARAMETERS" value="" />
+      <option name="USER_CFG_CLASS" />
+      <option name="CONTEXT_PROVIDER" />
+      <method />
+    </configuration>
+    <list size="9">
+      <item index="0" class="java.lang.String" itemvalue="Rails.Production: Coloph" />
+      <item index="1" class="java.lang.String" itemvalue="Rails.Development: Coloph" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.routes" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.db:reset" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.assets:precompile" />
+      <item index="8" class="java.lang.String" itemvalue="IRB console.Rails console: Coloph" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: Coloph" />
+        <item index="1" class="java.lang.String" itemvalue="Rake.routes" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.db:migrate" />
+        <item index="3" class="java.lang.String" itemvalue="Rake.db:reset" />
+        <item index="4" class="java.lang.String" itemvalue="Rake.assets:precompile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4351cf89-f6c8-444a-98b2-befe371fea9b" name="Default" comment="" />
+      <created>1386024079536</created>
+      <updated>1386024079536</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Relacionamentos praticamente feito">
+      <created>1387147813242</created>
+      <updated>1387147813242</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Relacionamentos praticamente feito">
+      <created>1387150054136</created>
+      <updated>1387150054136</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Relacionamentos praticamente feito">
+      <created>1387151195598</created>
+      <updated>1387151195598</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Auto-relacionamentos com papei">
+      <created>1387317497087</created>
+      <updated>1387317497087</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Auto-relacionamentos com papeis">
+      <created>1387317725333</created>
+      <updated>1387317725333</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Especializações">
+      <created>1387498913645</created>
+      <updated>1387498913645</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Especializações">
+      <created>1387498975589</created>
+      <updated>1387498975590</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Especializações">
+      <created>1387505566552</created>
+      <updated>1387505566552</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Modelo conceitual completo">
+      <created>1387845656978</created>
+      <updated>1387845656978</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Casca com o site">
+      <created>1389302716771</created>
+      <updated>1389302716771</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Casca com o site">
+      <created>1389308931141</created>
+      <updated>1389308931141</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Casca com o site">
+      <created>1389310368335</created>
+      <updated>1389310368335</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Casca com o site">
+      <created>1389311144197</created>
+      <updated>1389311144197</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Casca com o site">
+      <created>1389312004148</created>
+      <updated>1389312004148</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Casca com o site">
+      <created>1389312598514</created>
+      <updated>1389312598514</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Casca com o site">
+      <created>1389313199806</created>
+      <updated>1389313199806</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Casca com o site">
+      <created>1389314190954</created>
+      <updated>1389314190954</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Casca com o site">
+      <created>1389314288786</created>
+      <updated>1389314288786</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Casca com o site">
+      <created>1389315181810</created>
+      <updated>1389315181810</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Casca com o site">
+      <created>1389315530309</created>
+      <updated>1389315530309</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Casca com o site">
+      <created>1389315625879</created>
+      <updated>1389315625879</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Casca com o site">
+      <created>1389360717172</created>
+      <updated>1389360717172</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Casca com o site">
+      <created>1389561804206</created>
+      <updated>1389561804206</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Casca com o site">
+      <created>1389562445894</created>
+      <updated>1389562445894</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Casca com o site">
+      <created>1389562817803</created>
+      <updated>1389562817803</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Casca com o site">
+      <created>1389562880936</created>
+      <updated>1389562880937</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Casca com o site">
+      <created>1389563032355</created>
+      <updated>1389563032355</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Casca com o site">
+      <created>1389563282645</created>
+      <updated>1389563282645</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Casca com o site">
+      <created>1389563441917</created>
+      <updated>1389563441917</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Casca com o site">
+      <created>1389563585330</created>
+      <updated>1389563585330</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Casca com o site">
+      <created>1389563699937</created>
+      <updated>1389563699937</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Casca com o site">
+      <created>1389563974770</created>
+      <updated>1389563974770</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Casca com o site">
+      <created>1389564071990</created>
+      <updated>1389564071990</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Casca com o site">
+      <created>1389564253491</created>
+      <updated>1389564253491</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Casca com o site">
+      <created>1389564452581</created>
+      <updated>1389564452581</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Casca com o site">
+      <created>1389564948758</created>
+      <updated>1389564948758</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Casca com o site">
+      <created>1389565050800</created>
+      <updated>1389565050800</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Casca com o site">
+      <created>1389565212103</created>
+      <updated>1389565212103</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Casca com o site">
+      <created>1389571990746</created>
+      <updated>1389571990746</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Casca com o site">
+      <created>1389572970336</created>
+      <updated>1389572970336</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Tabelas vindo do banco">
+      <created>1389668759114</created>
+      <updated>1389668759114</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Relationships from the database (without fields)">
+      <created>1389821588164</created>
+      <updated>1389821588164</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Relationships from the database (without fields)">
+      <created>1389821872092</created>
+      <updated>1389821872092</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Relationships from the database (without fields)">
+      <created>1389822035387</created>
+      <updated>1389822035387</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Relationships from the database (without fields)">
+      <created>1389822488412</created>
+      <updated>1389822488412</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Relationships from the database (without fields)">
+      <created>1389822656371</created>
+      <updated>1389822656371</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Relationships from the database (without fields)">
+      <created>1389822894282</created>
+      <updated>1389822894282</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Relationships from the database (without fields)">
+      <created>1389823840911</created>
+      <updated>1389823840911</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Relationships from the database (without fields)">
+      <created>1389824619284</created>
+      <updated>1389824619284</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Relationships from the database (without fields)">
+      <created>1389824818094</created>
+      <updated>1389824818094</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Relationships from the database (without fields)">
+      <created>1389824894829</created>
+      <updated>1389824894829</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Relationships from the database (with fields)">
+      <created>1389914095622</created>
+      <updated>1389914095622</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Relationships from the database (with fields)">
+      <created>1390172555213</created>
+      <updated>1390172555213</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Relationships from the database (with fields) and specializations">
+      <created>1390173667483</created>
+      <updated>1390173667483</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Relationships from the database (with fields) and specializations">
+      <created>1390174108505</created>
+      <updated>1390174108506</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Relationships from the database (with fields) and specializations">
+      <created>1390174324965</created>
+      <updated>1390174324965</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Logical relatoinships and specializations">
+      <created>1391465679504</created>
+      <updated>1391465679505</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Logical relatoinships and specializations">
+      <created>1391562796017</created>
+      <updated>1391562796017</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Physical modeling and relational algebra query exercise">
+      <created>1393289299919</created>
+      <updated>1393289299919</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Physical modeling and relational algebra query exercise">
+      <created>1393289681871</created>
+      <updated>1393289681871</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Physical modeling and relational algebra query exercise">
+      <created>1393289754754</created>
+      <updated>1393289754754</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Physical modeling and relational algebra query exercise">
+      <created>1393290919433</created>
+      <updated>1393290919433</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Physical modeling and relational algebra query exercise">
+      <created>1393291554781</created>
+      <updated>1393291554781</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Physical modeling and relational algebra query exercise">
+      <created>1393365762649</created>
+      <updated>1393365762649</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Physical modeling and relational algebra query exercise">
+      <created>1394409441460</created>
+      <updated>1394409441460</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Bug report and features page">
+      <created>1394571643495</created>
+      <updated>1394571643495</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Bug report and features page">
+      <created>1394641874416</created>
+      <updated>1394641874416</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Bug report and features page">
+      <created>1394642912244</created>
+      <updated>1394642912244</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Bug report and features page">
+      <created>1394655970738</created>
+      <updated>1394655970738</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Bug report and features page">
+      <created>1394656234008</created>
+      <updated>1394656234008</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Bug report and features page">
+      <created>1394741839139</created>
+      <updated>1394741839139</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Help page, private diagrams for students and small fixes">
+      <created>1394742021954</created>
+      <updated>1394742021954</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Cardinalidade no relacionamento conceitual um pouco melhor&#10;Atributo identificador no relacionamento conceitual&#10;">
+      <created>1395100934171</created>
+      <updated>1395100934171</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Cardinalidade no relacionamento conceitual um pouco melhor&#10;Atributo identificador no relacionamento conceitual&#10;">
+      <created>1395105186687</created>
+      <updated>1395105186687</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Cardinalidade no relacionamento conceitual um pouco melhor&#10;Atributo identificador no relacionamento conceitual&#10;">
+      <created>1395191729482</created>
+      <updated>1395191729482</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Canvas to IMG&#10;">
+      <created>1395601853017</created>
+      <updated>1395601853017</updated>
+    </task>
+    <task id="LOCAL-00077" summary="digrama">
+      <created>1395794452664</created>
+      <updated>1395794452664</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Popover when relationship is clicked, modal dialog size adjusted, modal ain't closed when clicked outside of it.">
+      <created>1396405318902</created>
+      <updated>1396405318902</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Survey added">
+      <created>1396984531875</created>
+      <updated>1396984531875</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
+    <servers />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3308026" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32717392" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3425827" sideWeight="0.6941432" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2690583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30941704" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30585682" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32826087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3275488" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3206522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="Survey added" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Relacionamentos praticamente feito" />
+    <MESSAGE value="Auto-relacionamentos com papei" />
+    <MESSAGE value="Auto-relacionamentos com papeis" />
+    <MESSAGE value="Especializações" />
+    <MESSAGE value="Modelo conceitual completo" />
+    <MESSAGE value="Casca com o site" />
+    <MESSAGE value="Tabelas vindo do banco" />
+    <MESSAGE value="Relationships from the database (without fields)" />
+    <MESSAGE value="Relationships from the database (with fields)" />
+    <MESSAGE value="Relationships from the database (with fields) and specializations" />
+    <MESSAGE value="Logical relatoinships and specializations" />
+    <MESSAGE value="Physical modeling and relational algebra query exercise" />
+    <MESSAGE value="Bug report and features page" />
+    <MESSAGE value="Help page, private diagrams for students and small fixes" />
+    <MESSAGE value="Cardinalidade no relacionamento conceitual um pouco melhor&#10;Atributo identificador no relacionamento conceitual&#10;" />
+    <MESSAGE value="Canvas to IMG&#10;" />
+    <MESSAGE value="digrama" />
+    <MESSAGE value="Popover when relationship is clicked, modal dialog size adjusted, modal ain't closed when clicked outside of it." />
+    <MESSAGE value="Survey added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="338" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="40" selection-start="130" selection-end="130" vertical-scroll-proportion="0.055374593" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="48" selection-start="380" selection-end="380" vertical-scroll-proportion="0.41530946">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="44" selection-start="382" selection-end="382" vertical-scroll-proportion="0.46258503" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.027687296" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/_user.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="47" selection-start="115" selection-end="115" vertical-scroll-proportion="0.14455782" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/diagrams/_diagram_index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="34" selection-start="201" selection-end="201" vertical-scroll-proportion="0.23129252" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="16" selection-start="134" selection-end="134" vertical-scroll-proportion="-2.6153846" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Coloph/assets/css/font-awesome-ie7.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="58" selection-start="558" selection-end="558" vertical-scroll-proportion="0.16396396" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/Coloph/assets/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="24" selection-start="610" selection-end="610" vertical-scroll-proportion="0.3148148" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/diagrams/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/_visitor.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/diagrams/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="457" column="0" selection-start="17122" selection-end="17122" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/diagrams_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="14" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="4" selection-start="139" selection-end="139" vertical-scroll-proportion="0.15212528">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

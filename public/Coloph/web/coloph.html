@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+ <html lang="pt-br"> 
+<head>
+    <!--<meta charset="ISO-8859-1">     -->
+   <!--<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /> -->
+   <!--<meta charset="UTF-8">  -->
+    <title>Coloph pre-alpha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome-4.0.3/css/font-awesome.css">
+    <style type="text/css">
+        body {
+            padding-top: 40px;
+            height: 100%;
+        }
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-static-top navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <a class="brand">Coloph</a>
+            <ul class="nav">
+                <li><a id="preferences" href="#"><i id="prefences_icon" class="fa fa-cog"> Preferências</i></a></li>
+                <li><a href="#" id="conceptual_model">Modelagem conceitual</a></li>
+                <li><a href="#" id="logical_model">Modelagem lógica</a></li>
+
+            </ul>
+            <form class="navbar-form pull-right">
+                <input class="span2" type="text" placeholder="Email">
+                <input class="span2" type="password" placeholder="Password">
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <ul class="nav">
+                <li><a href="#" role="button" id="openTableModal" data-toggle="modal"><i class="fa fa-table"></i> Entidade</a></li>
+                <li class="divider-vertical"></li>
+                <li><a>Relacionamento</a></li>
+                <li><a href="#" id="relationCreationIdentifierRelationship"><i class="fa fa-link"></i> identificador</a></li>
+                <li><a href="#" id="relationCreationNonIdentifierRelationship"><i class="fa fa-unlink"></i> não identificador</a></li>
+                <li><a href="#" id="relationCreationTernary"><i class="fa fa-code-fork"></i> ternário</a></li>
+                <li><a href="#" id="relationCreationSelf"><i class="fa fa-dot-circle-o"></i> auto</a></li>
+                <li class="divider-vertical"></li>
+                <li><a></a></li>
+                <li><a href="#" id="specializationCreation"><i class="fa fa-sitemap"></i>  Generalização/Especialização</a></li>
+                <!-- <li><a href="#" id="relationCreationManyToMany"><s> fa-arrows-h Relacionamento muitos para muitos</s></a></li>  -->
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Modals -->
+<!-- Logical Table  -->
+<div class="modal hide fade" id="logical_table_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"  aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close modal_close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h3 id="myModalLabel">Tabela</h3>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label" for="table_name">Nome da tabela &nbsp;</label>
+
+                <div class="controls">
+                    <input class="input" type="text" id="table_name" placeholder="Nome da tabela"></p>
+                </div>
+            </div>
+            <table class="table" id="logical_field_table">
+                <thead>
+                <tr>
+                <th>
+                    <button class="btn btn-small btn-info table_drag_and_drop_help"><i class="icon-question-sign"></i>
+                    </button>
+                <th>Chave primária
+                <th>Nome do campo
+                <th>Nulo
+                <th>Chave estrangeira
+                    <tbody id="logical_field_table_body">
+            </table>
+        </form>
+
+    </div>
+
+    <div class="modal-footer">
+        <div class="alert alert-error fade" style="text-align:left">
+            <!-- Error list -->
+        </div>
+        <button class="btn modal_close" id="modal_close" data-dismiss="modal" aria-hidden="true">Fechar</button>
+        <button class="btn btn-primary" id="logical_table_modal_submit"><i class="icon-ok icon-white"></i> Finalizar  </button>
+    </div>
+</div>
+
+<!-- Conceptual Table  -->
+<div class="modal hide fade" id="conceptual_table_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close modal_close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h3 id="myModalLabel">Entidade</h3>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label" for="conceptual_table_name">Nome da entidade &nbsp;</label>
+
+                <div class="controls">
+                    <input class="input" type="text" id="conceptual_table_name" placeholder="Nome da entidade"></p>
+                </div>
+            </div>
+            <table class="table" id="conceptual_field_table">
+                <thead>
+                <tr>
+                <th>
+                    <button class="btn btn-small btn-info table_drag_and_drop_help"><i class="icon-question-sign"></i>
+                    </button>
+                <th>Atributo primário
+                <th>Nome do atributo
+                <th>Atributo estrangeiro
+                <th>Composto
+                <th>Multi-valorado
+                <th>Nulo
+                <th>Derivado
+                <tbody id="conceptual_field_table_body">
+            </table>
+        </form>
+
+    </div>
+
+    <div class="modal-footer">
+        <div class="alert alert-error fade" style="text-align:left">
+            <!-- Error list -->
+        </div>
+        <button class="btn modal_close" id="modal_close" data-dismiss="modal" aria-hidden="true">Fechar</button>
+        <button class="btn btn-primary" id="conceptual_table_modal_submit"><i class="icon-ok icon-white"></i> Finalizar
+        </button>
+    </div>
+</div>
+
+<!--Relationship -->
+<!-- Logical relationship -->
+<div class="modal modal-relationship hide fade" id="logical_relationship_modal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalEditLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h3 id="myModalEditLabel">Relacionamento</h3>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal">
+            <div class="control-group" id="logical_relationship_name_group">
+                <label class="control-label" for="logical_relationship_name">Nome &nbsp;</label>
+
+                <div class="controls">
+                    <input class="input-xlarge" type="text" id="logical_relationship_name"
+                           placeholder="Nome do relacionamento">
+                </div>
+            </div>
+
+            <div class="control-group" id="logical_relationship_parent_name_group">
+                <label class="control-label" for="logical_relationship_parent_name">Tabela pai &nbsp </label>
+
+                <div class="controls">
+                    <input class="input-xlarge" id="logical_relationship_parent_name" type="text" placeholder=""
+                           disabled>
+                </div>
+            </div>
+            <div class="control-group" id="logical_relationship_child_name_group">
+                <label class="control-label" for="logical_relationship_child_name">Tabela filha &nbsp </label>
+
+                <div class="controls">
+                    <input class="input-xlarge" id="logical_relationship_child_name" type="text" placeholder=""
+                           disabled>
+                </div>
+            </div>
+            <div class="control-group" id="logical_relationship_data_type_group">
+                <label class="control-label" for="logical_relationship_data_type">Tipo &nbsp;</label>
+
+                <div class="controls">
+                    <select class="input-xlarge" id="logical_relationship_data_type">
+                        <option>Relacionamento identificador</option>
+                        <option>Relacinoamento não identificador</option>
+                        <option>Relacionamento muitos para muitos</option>
+                        <option disabled>Auto-relacionamento</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group " id="logical_relationship_null_allowed_group">
+                <label class="control-label" for="logical_relationship_null_allowed">Nulos: &nbsp;</label>
+
+                <div class="controls">
+                    <select class="input-xlarge" id="logical_relationship_null_allowed">
+                        <option>Permitir</option>
+                        <option>Não permitir</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group" id="logical_relationship_cardinality_group">
+                <label class="control-label" for="logical_relationship_cardinality">Cardinalidade: &nbsp;</label>
+
+                <div class="controls">
+                    <select class="input-xlarge" id="logical_relationship_cardinality">
+                        <option>Zero ou um</option>
+                        <option>Zero ou vários</option>
+                        <option>Um ou vários</option>
+                    </select>
+                </div>
+            </div>
+            <table class="table" id="logical_relationship_fields_table">
+                <thead>
+                <tr>
+                <th>
+                    <button class="btn btn-small btn-info table_drag_and_drop_help"><i class="icon-question-sign"></i>
+                    </button>
+                <th>Nome do campo
+                    <tbody id="logical_relationship_fields_table_body">
+            </table>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+        <button class="btn btn-primary" id="relationship_submit"><i class="icon-ok icon-white"></i>&nbsp; Finalizar
+        </button>
+    </div>
+</div>
+<!-- Conceptual relationship -->
+<div class="modal hide fade" id="conceptual_relationship_modal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalEditLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+        <h3 id="myModalEditLabel">Relacionamento</h3>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal">
+            <div class="control-group" id="conceptual_relationship_name_group">
+                <label class="control-label" for="conceptual_relationship_name"><b>Nome</b> &nbsp;</label>
+                <div class="controls">
+                    <input class="span3" type="text" id="conceptual_relationship_name"
+                           placeholder="Nome do relacionamento">
+                </div>    
+            </div>
+            
+            <div class="row-fluid">
+              <div class=span6>
+                <div class="control-group" id="conceptual_identifying_relationship_group">
+                  <label class="control-label" for="conceptual_identifying_relationship">Identificador &nbsp;</label>
+                  <div class="controls">
+                    <input type="checkbox" id="conceptual_identifying_relationship" disabled>
+                  </div>
+                </div>
+              </div>
+        
+              <div class=span6>
+                <div class="control-group" id="conceptual_auto_relationship_group">
+                  <label class="control-label" for="conceptual_auto_relationship">Auto-relacionamento &nbsp;</label>
+                  <div class="controls">
+                    <input type="checkbox" id="conceptual_auto_relationship" disabled >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+            
+            <div class="row-fluid">
+                <div class="span4"><b>Entidade</b> </div>
+                <div class="span2">Cardinalidade</div>
+                <div class="span2">Cardinalidade</div>
+                <div class="span4"><b>Entidade</b> </div>
+            </div>
+            
+            <div class="row-fluid">
+              <div class="span4"><b>Pai</b></div>
+                <div class="span2">(Mín,Máx)</div>
+                <div class="span2">(Mín,Máx)</div>
+                <div class="span4"><b>Filha</b></div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span4">
+                  <input class="span12" id="conceptual_relationship_parent_name" type="text"  placeholder="" disabled>
+                </div>
+               
+                <div class="span2">
+                  <div class="row-fluid">
+                      <div class="span12">
+                          <select class="span12" id="conceptual_relationship_cardinality_parent">
+                              <option>(0,1)</option>
+                              <option>(0,N)</option>
+                              <option>(1,1)</option>
+                              <option>(1,N)</option>
+                          </select>
+                      </div>
+                  </div>
+                </div>
+                
+                <div class="span2">
+                  <div class="row-fluid">
+                      <div class="span12">
+                          <select class="span12" id="conceptual_relationship_cardinality_child">
+                              <option>(0,1)</option>
+                              <option>(0,N)</option>
+                              <option>(1,1)</option>
+                              <option>(1,N)</option>
+                          </select>
+                      </div>
+                  </div>
+                </div>
+                
+                <div class="span4">
+                  <input class="span12" id="conceptual_relationship_child_name" type="text" placeholder="" disabled>
+                </div>
+            </div>
+            <div id="self_relationship_roles_div">
+            <hr>
+            <b>Papéis</b>
+            <br>
+              <div class="row-fluid">
+                <div class="span6">
+                  <div class="row-fluid">
+                    <div class="span4">
+                      Papel do pai
+                    </div>
+                    <div class="span8" row-fluid> 
+                      <input class="span12" id="conceptual_relationship_parent_role" type="text"  placeholder="" >
+                    </div>  
+                  </div>
+                </div>
+                <div class="span6">
+                  <div class="row-fluid">              
+                    <div class="span4">
+                      Papel da filha
+                    </div>
+                    <div class="span8" row-fluid> 
+                      <input class="span12" id="conceptual_relationship_child_role" type="text"  placeholder="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <hr> 
+          <div id=ternaryRelationsihp > <!-- style="display: none;" -->
+             <div class="row-fluid">
+                  <div class="span4"><b>Entidade</b> </div>
+                  <div class="span2">Cardinalidade</div>
+                  <div class="span2">Cardinalidade</div>
+                  <div class="span4"><b>Entidade</b></div>
+              </div>
+              
+            <div class="row-fluid">
+              <div class="span4"><b>Pai</b></div>
+                <div class="span2">(Mín,Máx)</div>
+                <div class="span2">(Mín,Máx)</div>
+                <div class="span4"><b>Ternária</b></div>
+            </div>
+  
+              <div class="row-fluid">
+                  <div class="span4">
+                    <input class="span12" id="conceptual_relationship_ternary_parent_name" type="text" placeholder="" disabled>
+                  </div>
+                 
+               
+                <div class="span2">
+                  <div class="row-fluid">
+                      <div class="span12">
+                          <select class="span12" id="conceptual_relationship_ternary_cardinality_parent" disabled>
+                              <option>(0,1)</option>
+                              <option>(0,N)</option>
+                              <option>(1,1)</option>
+                              <option>(1,N)</option>
+                          </select>
+                      </div>
+                  </div>
+                </div>
+                
+                <div class="span2">
+                  <div class="row-fluid">
+                      <div class="span12">
+                          <select class="span12" id="conceptual_relationship_ternary_cardinality_child">
+                              <option value="(0,1)">(0,1)</option>
+                              <option>(0,N)</option>
+                              <option>(1,1)</option>
+                              <option>(1,N)</option>
+                          </select>
+                      </div>
+                  </div>
+                </div>
+                  <div class="span4">
+                    <input class="span12" id="conceptual_relationship_ternary_name" type="text" placeholder="" disabled>
+                  </div>
+              </div>
+              <hr>
+          </div>
+
+<!-- 
+            <div class="control-group" id="conceptual_relationship_parent_name_group">
+                <label class="control-label" for="conceptual_relationship_parent_name">Tabela pai &nbsp </label>
+
+                <div class="controls">
+                    <input class="input-xlarge" id="conceptual_relationship_parent_name" type="text" placeholder=""
+                           disabled>
+                </div>
+            </div>
+            <div class="control-group" id="conceptual_relationship_child_name_group">
+                <label class="control-label" for="conceptual_relationship_child_name">Tabela filha &nbsp </label>
+
+                <div class="controls">
+
+                </div>
+            </div>
+            <div class="control-group" id="conceptual_relationship_data_type_group">
+                <label class="control-label" for="conceptual_relationship_data_type">Tipo &nbsp;</label>
+
+                <div class="controls">
+                    <select class="input-mini" id="conceptual_relationship_data_type">
+                        <option>Relacionamento identificador</option>
+                        <option>Relacinoamento nï¿½o identificador</option>
+                        <option>Relacionamento muitos para muitos</option>
+                        <option disabled>Auto-relacionamento</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group " id="conceptual_relationship_null_allowed_group">
+                <label class="control-label" for="conceptual_relationship_null_allowed">Nulos: &nbsp;</label>
+
+                <div class="controls">
+                    <select class="input-xlarge" id="conceptual_relationship_null_allowed">
+                        <option>Permitir</option>
+                        <option>NÃ£o permitir</option>
+                    </select>
+                </div>
+            </div>
+            <div class="control-group" id="conceptual_relationship_cardinality_group">
+                <label class="control-label" for="conceptual_relationship_cardinality">Cardinalidade: &nbsp;</label>
+
+                <div class="controls">
+                    <select class="input-xlarge" id="conceptual_relationship_cardinality">
+                        <option>Zero ou um</option>
+                        <option>Zero ou vÃ¡rios</option>
+                        <option>Um ou vÃ¡rios</option>
+                    </select>
+                </div>
+            </div>
+             -->
+            <table class="table" id="relationship_field_table">
+                <thead>
+                <tr>
+                <th>
+                    <button class="btn btn-small btn-info table_drag_and_drop_help"><i class="icon-question-sign"></i>
+                    </button>
+                <th>
+                <th>Nome do atributo
+                <th>Composto
+                <th>Multi-valorado
+                <th>Nulo
+                <th>Derivado
+                <tbody id="relationship_fields_table_body">
+            </table>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
+        <button class="btn btn-primary" id="conceptual_relationship_modal_submit"><i class="icon-ok icon-white"></i>&nbsp; Finalizar
+        </button>
+    </div>
+</div>
+
+<!-- Preferences -->
+<div class="modal hide fade" id="preferences_modal">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Preferências</h3>
+    </div>
+    <div class="modal-body">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#">Preferências gerais</a>
+            </li>
+        </ul>
+        <label class="checkbox">
+            <input type="checkbox" id="grid_preference"> Mostrar grid
+        </label>
+    </div>
+    <div class="modal-footer">
+        <button class="btn modal_close" id="modal_close" data-dismiss="modal" aria-hidden="true">Fechar</button>
+        <button class="btn btn-primary" id="preferences_submit"><i class="icon-ok icon-white"></i>&nbsp; Finalizar
+        </button>
+    </div>
+</div>
+<!--End Modals -->
+
+
+<!-- Tree and Canvas -->
+
+<!--Body content-->
+<div>
+    <canvas id='canvas' data-context-menu="#canvas_menu" class='canvas_coloph' height="1" width="1">Seu browser não
+        suporta HTML5
+    </canvas>
+</div>
+
+<!-- Canvas Context Menu  -->
+<ul id="canvas_menu" class="context-menu dropdown-menu">
+    <!--
+       <li><a href="#" id="edit_table">Editar tabela</a></li>
+       <li><a href="#" id="delete_table">Deletar tabela</a></li>
+       <li><a href="#" id="edit_relationship">Editar relacionamento</a></li>
+       <li><a href="#" id="delete_relationship">Deletar relacionamento</a></li>
+       -->
+
+</ul>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="assets//js/jquery.js"></script>
+<script src="assets//js/bootstrap.min.js"></script>
+<script src="assets//js/bootstrap-transition.js"></script>
+<script src="assets//js/bootstrap-alert.js"></script>
+<script src="assets//js/bootstrap-modal.js"></script>
+<script src="assets//js/bootstrap-dropdown.js"></script>
+<script src="assets//js/bootstrap-scrollspy.js"></script>
+<script src="assets//js/bootstrap-tab.js"></script>
+<script src="assets//js/bootstrap-tooltip.js"></script>
+<script src="assets//js/bootstrap-popover.js"></script>
+<script src="assets//js/bootstrap-button.js"></script>
+<script src="assets//js/bootstrap-collapse.js"></script>
+<script src="assets//js/bootstrap-carousel.js"></script>
+<script src="assets//js/bootstrap-typeahead.js"></script>
+<script src="assets//js/jquery.tablednd.js"></script>
+<script src="assets//js/bootstrap-contextmenu.js"></script>
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> -->
+
+
+<script src="packages/browser/dart.js"></script>
+<script src="packages/browser/interop.js"></script>
+    <script type="application/dart" src="coloph.dart"></script>     
+    
+
+<!-- <script type="text/javascript" src="testjs/coloph.dart.js"></script> -->   
+
+
+</body>
+</html>

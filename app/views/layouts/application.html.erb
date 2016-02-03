@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Coloph</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
+
+  <%= javascript_include_tag "application" %>
+
+  <%= javascript_include_tag "bootstrap" %>
+
+
+  <%= csrf_meta_tags %>
+
+       <style type="text/css">
+          body {
+              padding-top: 40px;
+              height: 100%;
+
+          }
+      </style>
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-static-top navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container-fluid">
+     <%= link_to "Coloph", root_url, :class => "brand" %>
+      <ul class="nav">
+      <% if user_signed_in? %>
+          <% if current_user.role.to_s == "professor" %>
+                <li><%= link_to ('<i class="fa fa-tasks"></i>' +' '+ t('activerecord.models.exercise.other')).html_safe, exercises_path %></li>
+                <li><%= link_to ('<i class="fa fa-users"></i>' +' '+ t('activerecord.models.klass.other')).html_safe, klasses_path %></li>
+                <li><%= link_to ('<i class="fa fa-sitemap fa-flip-vertical"></i>' +' Meus '+ t('activerecord.models.diagram.other').downcase).html_safe, diagrams_path %></li>
+          <% elsif current_user.role.to_s == "student" %>
+                <li><%= link_to ('<i class="fa fa-home"></i>' + ' Início').html_safe, root_url %></li>
+                <li><%= link_to ('<i class="fa fa-sitemap fa-flip-vertical"></i>' +' Meus '+ t('activerecord.models.diagram.other').downcase).html_safe, diagrams_path %></li>
+          <% end %>
+      <% else%>
+      <% end %>
+      </ul>
+
+      <div class="nav pull-right">
+        <ul class="nav pull-right">
+          <% if user_signed_in? %>
+              <li><%= link_to ('<i class="fa fa-question-circle"></i>' + ' ' + 'Ajuda').html_safe, help_path %></li>
+              <li><p class="navbar-text"><i class="fa fa-user"></i> <%= current_user.name %><p class="navbar-text"></li>
+              <li><%= link_to ('<i class="fa fa-power-off"></i>' +' ' + t('auth.signout')).html_safe, destroy_user_session_path(protocol: 'https') %></li>
+          <% else %>
+              <li><%= link_to ('<i class="fa fa-asterisk"></i>' +' ' + t('auth.signup')).html_safe, new_user_registration_path %></li>
+              <li><%= link_to ('<i class="fa fa-lock"></i>' +' ' + t('auth.signin')).html_safe, new_user_session_path  %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<%= yield %>
+
+</body>
+</html>
